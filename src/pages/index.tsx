@@ -7,9 +7,7 @@ export default function Home() {
     <Head>
         <title>IG news | home</title>
     </Head>
-    <h1 >
-     HELLOW WORLD
-    </h1>
+  
     </>
     
   )
