@@ -3,9 +3,9 @@ import {FiX} from 'react-icons/fi'
 import styles from './styles.module.scss'
 export const SignInButton = () => {
 
-    const isUserLoggedIn = true
+    const isUserLoggedIn = false
 
-    
+
     return isUserLoggedIn ?(
        <button type="button" className={styles.signInButton}> 
         <FaGithub color="#04d361" />
