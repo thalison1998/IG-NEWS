@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import logo from "../../../public/images/ig.news.svg";
+import { SignInButton } from '../SignInButton';
 
 export const Header = () => {
     return (
@@ -11,6 +12,8 @@ export const Header = () => {
                     <a className={styles.active} href="">Home</a>
                     <a href="">Posts</a>
                 </nav>
+
+                <SignInButton />
             </div>
         </header>
     )
