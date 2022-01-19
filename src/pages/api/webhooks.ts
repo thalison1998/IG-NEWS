@@ -55,7 +55,7 @@ const webhooks = async (req: NextApiRequest, res: NextApiResponse) => {
                 await saveSubscription(
                     subscription.id,
                     subscription.customer.toString(),
-                    false
+                    type === 'customer.subscription.updated' || type === 'customer.subscription.deleted' ? true:false
                 )
                 break;
             case 'checkout.session.completed':
