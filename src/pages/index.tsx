@@ -14,7 +14,7 @@ interface HomeProps {
   }
 }
 
-export default function Home({product}:HomeProps) {
+ const Home = ({product}:HomeProps) => {
 
 
 
@@ -41,7 +41,7 @@ export default function Home({product}:HomeProps) {
     
   )
 }
-
+export default Home
 export const getStaticProps:GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1KHxyODQFNvbJ7mVZpI7KxQv'
   );
